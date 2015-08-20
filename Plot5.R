@@ -43,7 +43,7 @@ cars$year <- as.character(as.integer(cars$year)) ## For plotting purposes
 
 
 ## Plot 5
-png('plot5.png', width=550, height=480)
+png('Plot5.png', width=550, height=480)
 ggplot(data=cars, aes(x=year, y=Emissions, fill =vehicle)) + 
   geom_histogram(stat = "identity", position = position_dodge()) + 
   ggtitle("Motor Vehicles Emissions in Baltimore, MD: 1999-2008")

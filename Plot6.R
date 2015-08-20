@@ -63,7 +63,7 @@ allCars$fips <- gsub("24510", "Baltimore", allCars$fips)
 
 
 ## Plot 6
-png('plot6.png', width=550, height=480)
+png('Plot6.png', width=550, height=480)
 ggplot(data = allCars, aes(x = year, y = Emissions, fill = vehicle)) +  facet_grid(.~fips) + 
   geom_bar(stat ="identity", position = position_dodge()) +
   ggtitle(expression(atop("Two City Motor-Vehicle Emission Comparison", 

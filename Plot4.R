@@ -24,7 +24,7 @@ coal <- subset(NEI, SCC %in% data$SCC)
 coal$year <- as.character(as.integer(coal$year)) ## For plotting purposes
 
 # Plot 4
-png('plot4.png', width=480, height=480)
+png('Plot4.png', width=480, height=480)
 ggplot(data = coal, aes(x = year, y = Emissions, fill = type)) + 
   geom_bar(stat = "identity", position = "dodge") +
   ggtitle("U.S. Coal Combustion-Related Emissions: 1999-2008")

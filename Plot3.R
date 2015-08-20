@@ -16,7 +16,7 @@ NEI <- readRDS("summarySCC_PM25.rds")
 baltimore <- subset(NEI, NEI$fips == "24510")
 
 ## Plot 3
-png('plot3.png', width=480, height=480)
+png('Plot3.png', width=480, height=480)
 ggplot(data=baltimore, aes(x = year, y = Emissions)) + 
   geom_point(size = 4, alpha = 0.5, aes(color = type)) + 
   ggtitle("Baltimore, MD Emissions by Type: 1999-2008")

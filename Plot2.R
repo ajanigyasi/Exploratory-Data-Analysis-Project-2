@@ -14,7 +14,7 @@ baltimore <- subset(NEI, NEI$fips == "24510")
 totalBaltimore <- with(baltimore, tapply(Emissions, INDEX = year, sum))
 
 ## Plot 2
-png('plot2.png', width=480, height=480)
+png('Plot2.png', width=480, height=480)
 barplot(totalBaltimore,  xlab = "Year", ylab = "Emissions", 
      main = expression("Total Baltimore City, MD" ~ PM[2.5] ~ "Emissions by Year"), col = "purple")
 dev.off()
